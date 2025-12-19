@@ -1,0 +1,48 @@
+.section {
+    padding: 5rem 2rem;
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--color-text);
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #e2e8f0;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: left;
+}
+
+.card h3 {
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
+.check {
+    color: var(--color-primary);
+    margin-right: 0.5rem;
+    font-weight: bold;
+}

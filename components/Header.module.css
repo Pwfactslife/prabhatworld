@@ -1,0 +1,75 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.navContainer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    letter-spacing: -0.02em;
+}
+
+.logo span {
+    color: var(--color-text);
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navLinks a {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    transition: color 0.2s ease;
+}
+
+.navLinks a:hover {
+    color: var(--color-primary);
+}
+
+.ctaButton {
+    background-color: var(--color-primary);
+    color: white;
+    /* Always white on Onyx */
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    /* Pill shape for modern look */
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ctaButton:hover {
+    background-color: var(--color-text);
+    /* Slightly lighter or different shade */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+        /* Mobile menu to be added later if needed or simple stack */
+    }
+}
