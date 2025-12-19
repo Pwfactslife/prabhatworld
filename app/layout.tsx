@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     // creator: "@yourhandle", // Add if available
   },
   verification: {
-    google: "pending-verification", // User to replace
+    google: "nVsrNfnTXvjYBTGIfG4GbRvnfnBpbIOdfe_Kb2mSMxo",
   },
   alternates: {
     canonical: "/",
