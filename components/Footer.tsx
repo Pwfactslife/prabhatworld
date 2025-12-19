@@ -29,6 +29,11 @@ export default function Footer() {
 
                 <div className={styles.divider}></div>
 
+                <div className={styles.legalLinks} style={{ display: 'flex', gap: '20px', justifyContent: 'center', marginBottom: '10px', fontSize: '0.9rem' }}>
+                    <Link href="/privacy-policy" style={{ color: 'var(--foreground)', opacity: 0.8 }}>Privacy Policy</Link>
+                    <Link href="/terms-conditions" style={{ color: 'var(--foreground)', opacity: 0.8 }}>Terms & Conditions</Link>
+                </div>
+
                 <p className={styles.copyright}>
                     &copy; {currentYear} Prabhat World. AI Automation Solutions.
                 </p>
