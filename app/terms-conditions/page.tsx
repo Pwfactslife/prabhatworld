@@ -6,36 +6,70 @@ export default function TermsAndConditions() {
     return (
         <main>
             <Header />
-            <div className={styles.main} style={{ padding: "100px 20px", maxWidth: "800px", margin: "0 auto" }}>
-                <h1 style={{ marginBottom: "20px" }}>Terms and Conditions</h1>
-                <p>Last Updated: {new Date().toLocaleDateString()}</p>
+            <div className={styles.main} style={{ padding: "100px 20px", maxWidth: "800px", margin: "0 auto", lineHeight: "1.6" }}>
+                <h1 style={{ marginBottom: "20px", fontSize: "2rem", fontWeight: "bold" }}>Terms and Conditions</h1>
+                <p style={{ marginBottom: "30px", fontSize: "1.1rem", opacity: 0.8 }}>
+                    By using PrabhatWorld.tech, you agree to the following terms. Please read them carefully.
+                </p>
 
-                <section style={{ marginTop: "30px" }}>
-                    <h2>1. Agreement to Terms</h2>
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>1. Services</h2>
+                    <p>PrabhatWorld provides:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>AI automation services</li>
+                        <li>Business workflow solutions</li>
+                        <li>Web development and related consulting</li>
+                    </ul>
+                    <p>All services are provided based on mutual agreement, scope, and timelines discussed individually.</p>
+                </section>
+
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>2. Use of Website</h2>
+                    <p>You agree not to:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Misuse this website</li>
+                        <li>Attempt to access restricted areas</li>
+                        <li>Copy or reuse content without permission</li>
+                    </ul>
+                    <p>The website is intended for informational and business communication purposes only.</p>
+                </section>
+
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>3. No Guaranteed Results</h2>
+                    <p>While we aim to deliver practical and effective solutions:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Results may vary based on business processes and implementation</li>
+                        <li>We do not guarantee specific financial or operational outcomes</li>
+                    </ul>
+                    <p>Automation improves efficiency but does not replace sound business decisions.</p>
+                </section>
+
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>4. Intellectual Property</h2>
                     <p>
-                        These Terms and Conditions constitute a legally binding agreement between you, whether personally or on behalf of an entity (“you”) and Prabhat World (“we,” “us” or “our”), concerning your access to and use of the prabhatworld.tech website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”).
+                        All content on this website — including text, visuals, and branding — belongs to PrabhatWorld unless stated otherwise.
+                        You may not reproduce or redistribute content without written permission.
                     </p>
                 </section>
 
-                <section style={{ marginTop: "20px" }}>
-                    <h2>2. Intellectual Property Rights</h2>
-                    <p>
-                        Unless otherwise indicated, the Site is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws.
-                    </p>
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>5. Payments & Agreements</h2>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Pricing, timelines, and deliverables are discussed and agreed upon before starting any project</li>
+                        <li>Payments, if applicable, are governed by individual agreements or invoices</li>
+                        <li>No service is considered active unless confirmed by both parties</li>
+                    </ul>
                 </section>
 
-                <section style={{ marginTop: "20px" }}>
-                    <h2>3. User Representations</h2>
-                    <p>
-                        By using the Site, you represent and warrant that: (1) all registration information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update such registration information as necessary.
-                    </p>
-                </section>
-
-                <section style={{ marginTop: "20px" }}>
-                    <h2>4. Contact Us</h2>
-                    <p>
-                        In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at: contact@prabhatworld.tech
-                    </p>
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>6. Limitation of Liability</h2>
+                    <p>PrabhatWorld is not liable for:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Business losses</li>
+                        <li>Data loss due to external factors</li>
+                        <li>Issues arising from third-party tools or platforms</li>
+                    </ul>
+                    <p>We focus on best practices, but final responsibility remains with the business owner.</p>
                 </section>
             </div>
             <Footer />

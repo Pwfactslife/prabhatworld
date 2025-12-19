@@ -6,40 +6,90 @@ export default function PrivacyPolicy() {
     return (
         <main>
             <Header />
-            <div className={styles.main} style={{ padding: "100px 20px", maxWidth: "800px", margin: "0 auto" }}>
-                <h1 style={{ marginBottom: "20px" }}>Privacy Policy</h1>
-                <p>Last Updated: {new Date().toLocaleDateString()}</p>
+            <div className={styles.main} style={{ padding: "100px 20px", maxWidth: "800px", margin: "0 auto", lineHeight: "1.6" }}>
+                <h1 style={{ marginBottom: "20px", fontSize: "2rem", fontWeight: "bold" }}>Privacy Policy</h1>
+                <p style={{ marginBottom: "30px", fontSize: "1.1rem", opacity: 0.8 }}>
+                    At PrabhatWorld.tech, your privacy matters. This page explains what information we collect, why we collect it, and how we use it — in simple terms.
+                </p>
 
-                <section style={{ marginTop: "30px" }}>
-                    <h2>1. Introduction</h2>
-                    <p>
-                        Welcome to Prabhat World. We are committed to protecting your personal information and your right to privacy.
-                        If you have any questions or concerns about our policy, or our practices with regards to your personal information,
-                        please contact us at contact@prabhatworld.tech.
-                    </p>
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>1. Information We Collect</h2>
+                    <p>We only collect information that helps us communicate with you or provide our services.</p>
+                    <p style={{ marginTop: "10px" }}>This may include:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Your name</li>
+                        <li>Email address or WhatsApp number</li>
+                        <li>Business type</li>
+                        <li>Details you share about your workflow or automation needs</li>
+                    </ul>
+                    <p>We collect this information when you:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px" }}>
+                        <li>Fill out a contact form</li>
+                        <li>Request a free automation audit</li>
+                        <li>Contact us via WhatsApp or email</li>
+                    </ul>
                 </section>
 
-                <section style={{ marginTop: "20px" }}>
-                    <h2>2. Information We Collect</h2>
-                    <p>
-                        We collect personal information that you voluntarily provide to us when you express an interest in obtaining information
-                        about us or our products and services, when you participate in activities on the Website or otherwise when you contact us.
-                    </p>
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>2. How We Use Your Information</h2>
+                    <p>We use your information only to:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Respond to your inquiry</li>
+                        <li>Understand your business requirements</li>
+                        <li>Provide automation or web-related services</li>
+                        <li>Improve our website and offerings</li>
+                    </ul>
+                    <p><strong>We do not sell, rent, or trade your personal data.</strong></p>
                 </section>
 
-                <section style={{ marginTop: "20px" }}>
-                    <h2>3. How We Use Your Information</h2>
-                    <p>
-                        We use personal information collected via our Website for a variety of business purposes described below.
-                        We process your personal information for these purposes in reliance on our legitimate business interests,
-                        in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.
-                    </p>
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>3. Cookies & Analytics</h2>
+                    <p>We may use basic analytics tools (such as Google Analytics) to understand:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Which pages are visited</li>
+                        <li>How users interact with the site</li>
+                    </ul>
+                    <p>This data is anonymous and used only to improve performance and user experience.</p>
                 </section>
 
-                <section style={{ marginTop: "20px" }}>
-                    <h2>4. Contact Us</h2>
-                    <p>
-                        If you have questions or comments about this policy, you may email us at contact@prabhatworld.tech.
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>4. Data Storage & Security</h2>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Your data is stored securely</li>
+                        <li>Access is limited and protected</li>
+                        <li>We take reasonable steps to prevent unauthorized access</li>
+                    </ul>
+                    <p>However, no online system is 100% secure, and we cannot guarantee absolute security.</p>
+                </section>
+
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>5. Third-Party Services</h2>
+                    <p>We may use trusted third-party services for:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Email communication</li>
+                        <li>Form handling</li>
+                        <li>Analytics</li>
+                    </ul>
+                    <p>These services only receive the information required to perform their function and are expected to follow standard data protection practices.</p>
+                </section>
+
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>6. Your Rights</h2>
+                    <p>You have the right to:</p>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "10px", marginBottom: "10px" }}>
+                        <li>Ask what data we hold about you</li>
+                        <li>Request correction or deletion of your data</li>
+                        <li>Withdraw consent at any time</li>
+                    </ul>
+                    <p>To do this, simply contact us.</p>
+                </section>
+
+                <section style={{ marginBottom: "30px" }}>
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "15px" }}>7. Contact Information</h2>
+                    <p>If you have questions about this policy, you can contact us at:</p>
+                    <p style={{ marginTop: "10px" }}>
+                        📧 Email: contact@prabhatworld.tech<br />
+                        🌐 Website: prabhatworld.tech
                     </p>
                 </section>
             </div>
