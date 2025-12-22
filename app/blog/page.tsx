@@ -8,56 +8,106 @@ import styles from './blog.module.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Insights & Guides - Prabhat World",
-    description: "Practical guides on AI automation, business growth, and technology for small businesses.",
+    title: "Design & Photography Journal - Prabhat World",
+    description: "Curated stories on design, automation, and business growth.",
 };
 
 export default function Blog() {
+    const featuredPost = blogPosts[0];
+    const restPosts = blogPosts.slice(1);
+
     return (
-        <main className="min-h-screen bg-gray-50 flex flex-col">
+        <main className={styles.main}>
             <Header />
-            <div className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-                <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                        Insights & Guides
-                    </h1>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        Practical strategies to automate your business, save time, and scale faster.
-                    </p>
+
+            <div className={styles.container}>
+                {/* Header Section */}
+                <div className={styles.journalHeader}>
+                    <div className={styles.categoryLabel}>Resources <span className={styles.arrow}>&rarr;</span> <span className={styles.activeCategory}>Design & Photography</span></div>
+                    <h1 className={styles.pageTitle}>Untitled Design & Photography Journal</h1>
+                    <p className={styles.pageSubtitle}>The Untitled UI Journal features carefully selected good works from studios, designers, architects, photographers, and creators from all around the globe. Subscribe for new posts in your inbox.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {blogPosts.map((post) => (
+                {/* Hero Section */}
+                {featuredPost && (
+                    <Link href={`/blog/${featuredPost.slug}`} className={styles.heroLink}>
+                        <div className={styles.heroCard}>
+                            <div className={styles.heroImageContainer}>
+                                <Image
+                                    src={featuredPost.image}
+                                    alt={featuredPost.title}
+                                    fill
+                                    className={styles.heroImage}
+                                    priority
+                                />
+                                <div className={styles.heroOverlay}>
+                                    <div className={styles.heroContent}>
+                                        <h2 className={styles.heroTitle}>
+                                            {featuredPost.title}
+                                        </h2>
+                                        <div className={styles.heroMeta}>
+                                            <span className={styles.heroAuthor}>By {featuredPost.author}</span>
+                                            <span className={styles.heroDate}>{new Date(featuredPost.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                )}
+
+                {/* Grid Section */}
+                <div className={styles.featuredHeader}>
+                    <h2>Featured blog posts</h2>
+                    <button className={styles.viewAllBtn}>View all posts</button>
+                </div>
+
+                <div className={styles.grid}>
+                    {restPosts.map((post) => (
                         <Link
                             key={post.slug}
                             href={`/blog/${post.slug}`}
-                            className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col border border-gray-100"
+                            className={styles.card}
                         >
-                            <div className="relative h-56 w-full overflow-hidden">
+                            <div className={styles.cardImageContainer}>
                                 <Image
                                     src={post.image}
                                     alt={post.title}
                                     fill
-                                    className="object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                    className={styles.cardImage}
                                 />
                             </div>
-                            <div className="p-6 flex flex-col flex-grow">
-                                <div className="flex items-center text-sm text-blue-600 mb-3 font-medium">
-                                    {post.tags[0]}
+                            <div className={styles.cardContent}>
+                                <div className={styles.cardHeader}>
+                                    <h3 className={styles.cardTitle}>
+                                        {post.title}
+                                    </h3>
+                                    <span className={styles.arrowIcon}>↗</span>
                                 </div>
-                                <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
-                                    {post.title}
-                                </h2>
-                                <p className="text-gray-600 mb-4 line-clamp-2 text-sm flex-grow">
+                                <p className={styles.cardDescription}>
                                     {post.description}
                                 </p>
-                                <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100 text-sm text-gray-500">
-                                    <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                                    <span className="group-hover:translate-x-1 transition-transform">Read Article →</span>
+                                <div className={styles.cardMeta}>
+                                    <div className={styles.authorGroup}>
+                                        {/* Avatar placeholder if we had one, for now just text */}
+                                        <span className={styles.cardAuthor}>{post.author}</span>
+                                    </div>
+                                    <span className={styles.cardDate}>{new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
                                 </div>
                             </div>
                         </Link>
                     ))}
+                </div>
+
+                {/* CTA Section */}
+                <div className={styles.ctaSection}>
+                    <div className={styles.ctaContent}>
+                        <h3>Let&apos;s get started on something great</h3>
+                        <p>Join over 4,000+ startups already growing with Untitled.</p>
+                    </div>
+                    <div className={styles.ctaActions}>
+                        <button className={styles.ctaButton}>Get started</button>
+                    </div>
                 </div>
             </div>
             <Footer />

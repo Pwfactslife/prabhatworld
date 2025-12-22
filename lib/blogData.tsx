@@ -219,5 +219,65 @@ export const blogPosts: BlogPost[] = [
                 </section>
             </>
         )
+    },
+    {
+        slug: "design-skills-develop-eye",
+        title: "Improve Your Design Skills: Develop an \"Eye\" for Design",
+        description: "The journey to becoming a potentially amazing and great designer starts here. Learn how to quickly develop an \"eye\" for all design and improve your design skills...",
+        date: "2025-06-16",
+        author: "Kandice Wu",
+        image: "/blog/design-skills.jpg", // Placeholder
+        tags: ["Design", "Skills"],
+        content: <p>Content coming soon...</p>
+    },
+    {
+        slug: "relentless-pursuit-perfection",
+        title: "A Relentless Pursuit of Perfection in Product Design",
+        description: "I began to notice that there was a sharp contrast between well-made, crafted products and poorly made ones, and an even greater distinction between the...",
+        date: "2025-06-14",
+        author: "Sean Wilson",
+        image: "/blog/perfection.jpg", // Placeholder
+        tags: ["Product", "Design"],
+        content: <p>Content coming soon...</p>
+    },
+    {
+        slug: "continually-unfolding-history",
+        title: "A Continually Unfolding History — Made by Hand",
+        description: "A newly bustling occupant of the local Mall is a historic old business: the stationary bar. Stationary is everywhere. The much loved work of Made by Hand...",
+        date: "2025-06-12",
+        author: "Phoenix Baker",
+        image: "/blog/history.jpg", // Placeholder
+        tags: ["History", "Craft"],
+        content: <p>Content coming soon...</p>
+    },
+    {
+        slug: "remote-collaboration",
+        title: "How Remote Collaboration Makes Us Better Designers",
+        description: "Collaboration can make our teams stronger, and our individual designs better. Remote environments bring new challenges to remain collaborative but...",
+        date: "2025-06-10",
+        author: "Lana Steiner",
+        image: "/blog/remote.jpg", // Placeholder
+        tags: ["Remote", "Collaboration"],
+        content: <p>Content coming soon...</p>
+    },
+    {
+        slug: "scaling-startup-books",
+        title: "Best Books on Scaling Your Early-Stage Startup",
+        description: "The valuable but rare skill set required for scaling your startup is overlooked. Learn which books are most valuable to take your business to the next...",
+        date: "2025-06-08",
+        author: "Demi Wilkinson",
+        image: "/blog/books.jpg", // Placeholder
+        tags: ["Startup", "Books"],
+        content: <p>Content coming soon...</p>
+    },
+    {
+        slug: "food-matters-disease-prevention",
+        title: "Why Food Matters — Disease Prevention & Treatment",
+        description: "Eating more plants and less meat has been tied to a longer life and a reduced risk of cardiovascular disease in a new study of the 17th lunar cycle...",
+        date: "2025-06-06",
+        author: "Candice Wu",
+        image: "/blog/food-matters.jpg", // Placeholder
+        tags: ["Health", "Prevention"],
+        content: <p>Content coming soon...</p>
     }
 ];
