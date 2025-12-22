@@ -1,7 +1,15 @@
 import { MetadataRoute } from 'next';
+import { blogPosts } from '@/lib/blogData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://prabhatworld.tech';
+
+    const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.date),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+    }));
 
     return [
         {
@@ -10,13 +18,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 1,
         },
-        // Add other routes here as they are built
         {
             url: `${baseUrl}/blog`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8,
         },
+        ...blogEntries,
         {
             url: `${baseUrl}/privacy-policy`,
             lastModified: new Date(),
