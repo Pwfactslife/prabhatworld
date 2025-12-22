@@ -16,7 +16,7 @@ export default function Hero() {
                     Get a Free Automation Audit
                 </Link>
                 <Link
-                    href="https://wa.me/919999999999" // TODO: Use real number
+                    href="https://wa.me/9117609166" // 
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.secondaryCta}
