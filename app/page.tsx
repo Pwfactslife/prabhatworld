@@ -8,7 +8,6 @@ import VisualBreak from "@/components/VisualBreak";
 import HowItWorks from "@/components/HowItWorks";
 import Work from "@/components/Work";
 import TrustBio from "@/components/TrustBio";
-import LatestInsights from "@/components/LatestInsights";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import LeadPopup from "@/components/LeadPopup";
@@ -26,7 +25,6 @@ export default function Home() {
       <HowItWorks />
       <Work />
       <TrustBio />
-      <LatestInsights />
       <ContactForm />
       <Footer />
       <LeadPopup />

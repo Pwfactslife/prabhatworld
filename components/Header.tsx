@@ -12,6 +12,7 @@ export default function Header() {
                     <Link href="#services">Services</Link>
                     <Link href="#work">Work</Link>
                     <Link href="#about">About</Link>
+                    <Link href="/blog">Blog</Link>
                     <Link href="#contact" className={styles.ctaButton}>
                         Book Audit
                     </Link>
